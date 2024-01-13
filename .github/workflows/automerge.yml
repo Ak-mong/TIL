@@ -1,5 +1,0 @@
-  - name: Merge pull requests (automerge-action)
-  # You may pin to the exact commit or the version.
-  # uses: pascalgn/automerge-action@58724c982461efbb7865b3762d7bff0d4756f57a
-  uses: pascalgn/automerge-action@v0.16.2
-          
