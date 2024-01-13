@@ -2,7 +2,7 @@ const { Client } = require('notion-sdk-node');
 const { promises: fs } = require('fs');
 
 const notion = new Client({ auth: process.env.NOTION_API_TOKEN });
-const databaseId = 'YOUR_NOTION_DATABASE_ID'; // Notion에서 가져온 데이터베이스 ID로 대체
+const databaseId = 'b081e25704ae40b6a8ad477280e5098e'; // Notion에서 가져온 데이터베이스 ID로 대체
 
 async function fetchNotionContent() {
   const response = await notion.databases.query({
