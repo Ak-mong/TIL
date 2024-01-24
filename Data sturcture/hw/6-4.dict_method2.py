@@ -31,3 +31,10 @@ for d in data:
     for key, value in d.items():
         print(f'{key}은/는 {value}입니다.')
     print()
+
+for phone in data:
+    for key in key_list:
+        if not phone.get(key):
+            phone.setdefault(key, 'unknowns')
+        print(f'{key}은/는 {phone[key]}입니다.')
+    print()
