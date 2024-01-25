@@ -1,34 +1,31 @@
 # 아래 클래스를 수정하시오.
 class Animal:
-    def __init__(self, meow):
-        self.meow = meow
-        return self.meow
+    pass
+
+class Dog(Animal):
+    def __init__(self) -> None:
+        pass
+    
+    def bark(self):
+        print("멍멍!")
 
 class Cat(Animal):
-
     def __init__(self,meow):
-        super().__init__(meow)
-
+        self.meow = meow
+    
     def meow(self):
-        return print(self.meow)
-class Dog(Animal):
-    def __init__(self,meow):
-        super().__init__(meow)
-
-    def bark(self):
-        return print(self.meow)
-
-    pass
+        return print('야옹!')
+    
 class Pet(Dog,Cat):
-    def __init__(self,meow,sound):
-        super().__init__(meow)
+    def __init__(self, sound):
+        super().__init__()
         self.sound = sound
-    def play(self):
-        return '애완동물과 놀기'
-    def make_sound(self):
-        return self.sound
-    pass
 
+    def make_sound(self):
+        print(self.sound)
+    
+    def play(self):
+        print('애완동물과 놀기')
 
 pet1 = Pet("그르르")
 pet1.make_sound()
