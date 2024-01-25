@@ -12,3 +12,7 @@ class Person:
 person1 = Person("Alice", 25)
 person1.introduce()
 print(Person.number_of_people)
+
+person2 = Person("Alice", 25)
+person2.introduce()
+print(Person.number_of_people)

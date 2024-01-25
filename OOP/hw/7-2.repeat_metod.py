@@ -2,7 +2,7 @@
 class StringRepeater:
 
     def repeat_string(self, count, txt):
-        for i in range(count):
+        for _ in range(count):
             print(txt)
 
 repeater1 = StringRepeater()
