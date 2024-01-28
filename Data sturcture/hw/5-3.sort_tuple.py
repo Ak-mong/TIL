@@ -13,3 +13,12 @@ def sort_tuple2(t):
 
 result2 = sort_tuple((5, 2, 8, 1, 3))
 print(result2)
+
+def sort_tuple3(tup):
+    a = sorted(tup)
+    print(type(a))
+    return tuple(a)
+    pass
+
+result3 = sort_tuple((5, 2, 8, 1, 3))
+print(result3)

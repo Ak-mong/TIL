@@ -10,3 +10,12 @@ def add_item_to_dict(input_dict, key ,value):
 my_dict = {'name': 'Alice', 'age': 25}
 result = add_item_to_dict(my_dict, 'country', 'USA')
 print(result)
+
+def add_item_to_dict2(input_dict, key ,value):
+    # new_dict = input_dict
+    input_dict.setdefault(key,value)
+    return input_dict
+
+
+result2 = add_item_to_dict2(my_dict, 'country', 'USA')
+print(result2)

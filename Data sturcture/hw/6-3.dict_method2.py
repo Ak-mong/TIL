@@ -38,3 +38,10 @@ for phone in data:
             phone.setdefault(key, 'unknowns')
         print(f'{key}은/는 {phone[key]}입니다.')
     print()
+print('-'*50)
+for dt in data:
+    for key in key_list:
+        if dt.get(key) == None:
+            dt.setdefault(key,'unknown')
+        print(f'{key} 은/는 {dt[key]}입니다.')
+    print()

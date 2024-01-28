@@ -17,7 +17,8 @@ for key, value in data.items():
 print(data.values())
 # 3. data에서 'without' 키가 가진 value를 출력한다.
     # 해당하는 키가 data에 없다면, 'unknown' 문자열을 출력한다.
-print(data.get('without','unknown'))
+print(data.get('without','unknown')) #추가는 하지 않음
+print(data.setdefault('without2','unknown2')) #추가 까지 해줌
 # 4. plus_data가 가진 모든 키와 벨류를 data에 추가한다.
 data.update(plus_data)
 # 5. 변경된 data를 출력한다.
