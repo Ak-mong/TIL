@@ -13,7 +13,7 @@ def dec(arr, N): #내림차순
     for i in range(N - 1, 0, -1):
         # for j : 0 -> i-1 , j는 비교할 두 원소 중 왼쪽의 인덱스
         for j in range(i):
-            if arr[j] < arr[j + 1]:  # 오름차순은 큰 수를 오른쪽으로
+            if arr[j] < arr[j + 1]:  # 내림차순은 큰 수를 오른쪽으로
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 asc(arr, N)
 print(arr)
