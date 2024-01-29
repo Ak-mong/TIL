@@ -3,7 +3,7 @@ class Animal:
     pass
 
 class Dog(Animal):
-    def __init__(self) -> None:
+    def __init__(self):
         pass
     
     def bark(self):
@@ -14,7 +14,7 @@ class Cat(Animal):
         self.meow = meow
     
     def meow(self):
-        return print('야옹!')
+        print('야옹!')
     
 class Pet(Dog,Cat):
     def __init__(self, sound):
