@@ -6,7 +6,7 @@ T = 10
 for tc in range(1, T + 1):
     N = int(input())
     arr = list(map(int,input().split()))
-<<<<<<< HEAD
+
     # cnt = [0] * len(arr)
     # print(max(arr))
     # print(arr)
@@ -23,7 +23,7 @@ for tc in range(1, T + 1):
         min_v -= 1
     print(max_v - min_v)
     # print(f'#{tc} {sum_v}')
-=======
+
     # 평탄화 작업 반복문
     for _ in range(N):
         max_i = 0
@@ -85,7 +85,7 @@ for tc in range(1, T + 1):
     print(max_v - min_v)
     """
 
->>>>>>> 63926bd51f7baf780c7d3571454df1c1ad137f61
+
 
 
 
