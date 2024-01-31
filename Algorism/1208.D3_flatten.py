@@ -6,12 +6,21 @@ T = 10
 for tc in range(1, T + 1):
     N = int(input())
     arr = list(map(int,input().split()))
-    cnt = [0] * len(arr)
-    print(max(arr))
-    print(arr)
-    for i in range(len(arr)):
-        cnt[arr[i]] += 1
-    print(cnt)
+    # cnt = [0] * len(arr)
+    # print(max(arr))
+    # print(arr)
+    # for i in range(len(arr)):
+    #     cnt[arr[i]] += 1
+    # print(cnt)
+    max_v = min_v = 0
+    for i in range(N):
+        if max_v < arr[i]:
+            max_v = arr[i]
+        if min_v > arr[i]:
+            min_v = arr[i]
+        max_v -= 1
+        min_v -= 1
+    print(max_v - min_v)
     # print(f'#{tc} {sum_v}')
 
 
