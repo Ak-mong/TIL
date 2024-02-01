@@ -5,7 +5,7 @@ for tc in range(1,t+1):
     n, k = list(map(int,input().split()))
     cnt = 0
 
-    for i in range(1,12-n+2):
+    for i in range(1,1<<n):
         sums = 0
         for j in range(n):
             sums += i + j
