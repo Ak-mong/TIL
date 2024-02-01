@@ -11,9 +11,9 @@ def countPage(page,goal):
         if mid == goal:
             return cnt
         elif mid > goal:
-            end = mid - 1
+            end = mid
         else:
-            start = mid + 1
+            start = mid
     return -1
 t = int(input())
 for tc in range(1,t+1):
