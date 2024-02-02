@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c34da424-6639-4b90-8f30-6e3aab0604f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/week_1/.idea/Algorism.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/D4_1210.ladder1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/ladder1_for.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/ladder1_for_sejin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/test/D4_1210.ladder1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/test/special_indexing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/test/t_binary1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1/txt/ladder1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/week_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/D2_2001_kill_fly.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11633.list_sum..py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11646.gravity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11785.min_max.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1206.view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_11811.number_card.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_11821.color_print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_11823.binary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_14889.4direction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_2001.kill_fly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D3_11825.special_indexing.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1/D3_11825.special_indexing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D3_1208.flatten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/D3_4837.sum_subset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/arr2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/binary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/bubblesort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/countsort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/delta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/delta2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/gravity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/hello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/selection_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arr/subset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_11811_D2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_1208_D3_flatten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_4direction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_binary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_bubblesort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_colorprint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_countsort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_elect_bus.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_selection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_sequence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/t_sum_subset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/4direction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/binary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/color_print.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/flatten" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/gravity.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/kill_fly.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/list_sum.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/min_max_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/number_card.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/specialindexing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1/txt/specialindexing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/sum_subset.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/view.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2bnTMVRcvkzTPmFuqSoL432Lm2r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_1\test" />
+      <recent name="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_1\txt" />
+      <recent name="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ladder1_for">
+    <configuration name="D4_1210.ladder1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorism" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/test/D4_1210.ladder1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="D4_1210.ladder1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorism" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/D4_1210.ladder1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="D4_1210.ladder1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorism" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_1\test\D4_1210.ladder1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ladder1_for" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorism" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/ladder1_for.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="special_indexing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorism" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/test/special_indexing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ladder1_for" />
+        <item itemvalue="Python.D4_1210.ladder1 (2)" />
+        <item itemvalue="Python.D4_1210.ladder1 (1)" />
+        <item itemvalue="Python.D4_1210.ladder1" />
+        <item itemvalue="Python.special_indexing" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c34da424-6639-4b90-8f30-6e3aab0604f2" name="Default Changelist" comment="" />
+      <created>1706849796576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706849796576</updated>
+    </task>
+    <servers />
+  </component>
+</project>
