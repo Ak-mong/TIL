@@ -1,75 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c34da424-6639-4b90-8f30-6e3aab0604f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/week_1/.idea/Algorism.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/D4_1210.ladder1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/ladder1_for.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/ladder1_for_sejin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/test/D4_1210.ladder1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/test/special_indexing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/test/t_binary1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_1/txt/ladder1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/week_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week_2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/D2_2001_kill_fly.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/11633.list_sum..py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/11646.gravity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/11785.min_max.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1206.view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_11811.number_card.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_11821.color_print.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_11823.binary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_14889.4direction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_2001.kill_fly.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D3_11825.special_indexing.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1/D3_11825.special_indexing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D3_1208.flatten.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/D3_4837.sum_subset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/arr2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/binary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/bubblesort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/countsort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/delta.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/delta2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/gravity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/hello.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/selection_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arr/subset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_11811_D2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_1208_D3_flatten.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_4direction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_binary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_bubblesort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_colorprint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_countsort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_elect_bus.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_for.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_selection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_sequence.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_sum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t_sum_subset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/4direction.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/binary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/color_print.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/flatten" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/gravity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/kill_fly.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/list_sum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/min_max_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/number_card.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/specialindexing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1/txt/specialindexing.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/sum_subset.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/view.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_1_List/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/D2_11867.palindrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/D2_11867.string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/D2_1989.palindrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/Lecture/itoa().py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/Test/find().py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/txt/palindrome" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/txt/palindrome2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week_2_String/txt/string" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/Algorism.iml" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/Algorism.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/runConfigurations/D2_2001_kill_fly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/runConfigurations/D2_2001_kill_fly.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/11633.list_sum..py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/11633.list_sum..py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/11646.gravity.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/11646.gravity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/11785.min_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/11785.min_max.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/1206.view.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/1206.view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2.16268_balloon2.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2.16268_balloon2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2.9490_ballon1.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2.9490_ballon1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2_11811.number_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2_11811.number_card.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2_11821.color_print.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2_11821.color_print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2_11823.binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2_11823.binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2_14889.4direction.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2_14889.4direction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D2_2001.kill_fly.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D2_2001.kill_fly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D3_11825.special_indexing.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D3_11825.special_indexing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D3_1208.flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D3_1208.flatten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D3_4837.sum_subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D3_4837.sum_subset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D3_6495.samsungBus.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D3_6495.samsungBus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/D4_1210.ladder1.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/D4_1210.ladder1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/ladder1_for.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/ladder1_for.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/ladder1_for_sejin.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/ladder1_for_sejin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/D2.16268_balloon2.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/D2.16268_balloon2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/D2.9490_ballon1.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/D2.9490_ballon1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/D2_1979.whereWordIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/D2_1979.whereWordIn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/D3_6495.samsungBus.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/D3_6495.samsungBus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/arr2.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/arr2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/bubblesort.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/bubblesort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/countsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/countsort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/delta.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/delta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/delta2.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/delta2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/gravity.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/gravity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/hello.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/selection_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/selection_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/subset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/lecture/wherewordin.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/lecture/wherewordin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/D4_1210.ladder1.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/D4_1210.ladder1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/special_indexing.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/special_indexing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_11811_D2.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_11811_D2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_1208_D3_flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_1208_D3_flatten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_4direction.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_4direction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_binary1.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_binary1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_bubblesort.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_bubblesort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_colorprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_colorprint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_countsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_countsort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_elect_bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_elect_bus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_for.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_for.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_sequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/test/t_sum_subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/test/t_sum_subset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/4direction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/4direction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/ballon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/ballon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/binary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/binary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/color_print.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/color_print.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/flatten" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/flatten" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/gravity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/gravity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/kill_fly.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/kill_fly.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/ladder1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/ladder1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/list_sum.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/list_sum.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/min_max_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/min_max_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/number_card.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/number_card.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/samsungBus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/samsungBus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/specialindexing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/specialindexing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/sum_subset.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/sum_subset.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/view.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/view.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/txt/whereword in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week_1_List/txt/whereword in.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/week_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/.idea/week_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_2_String/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +124,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,8 +133,8 @@
       <recent name="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ladder1_for">
-    <configuration name="D4_1210.ladder1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.D2_11867.string">
+    <configuration name="D2_11867.palindrome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorism" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_2_String" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/test/D4_1210.ladder1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_2_String/D2_11867.palindrome.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D4_1210.ladder1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="D2_11867.string" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorism" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_2_String" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/D4_1210.ladder1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_2_String/D2_11867.string.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,7 +176,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D4_1210.ladder1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="find()" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorism" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,11 +184,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_2_String/Test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_1\test\D4_1210.ladder1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_2_String/Test/find().py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,7 +197,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ladder1_for" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="itoa() (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorism" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,11 +205,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_2_String/Lecture" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/ladder1_for.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_2_String/Lecture/itoa().py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,7 +218,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="special_indexing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="itoa()" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorism" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,11 +226,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_1/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_2_String/Lecture" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_1/test/special_indexing.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\Desktop\month1\TIL\Algorism\week_2_String\Lecture\itoa().py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ladder1_for" />
-        <item itemvalue="Python.D4_1210.ladder1 (2)" />
-        <item itemvalue="Python.D4_1210.ladder1 (1)" />
-        <item itemvalue="Python.D4_1210.ladder1" />
-        <item itemvalue="Python.special_indexing" />
+        <item itemvalue="Python.D2_11867.string" />
+        <item itemvalue="Python.D2_11867.palindrome" />
+        <item itemvalue="Python.find()" />
+        <item itemvalue="Python.itoa() (1)" />
+        <item itemvalue="Python.itoa()" />
       </list>
     </recent_temporary>
   </component>
@@ -230,5 +259,36 @@
       <updated>1706849796576</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/week_2_String/D2_1989.palindrome.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/week_2_String/Lecture/itoa().py</url>
+          <line>8</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/week_2_String/Test/find().py</url>
+          <line>15</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/week_2_String/D2_11867.string.py</url>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="t[i+j]" language="Python" />
+        <watch expression="p[i]" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
