@@ -7,3 +7,4 @@ def itoa(a):
 
 ans = itoa(123)
 print(ans)
+print(type(ans))
