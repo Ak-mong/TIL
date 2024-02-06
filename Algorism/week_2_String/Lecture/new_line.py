@@ -1,0 +1,5 @@
+print('a\nb')
+# print(len('a\nb'))
+print('a')
+print('b')
+open('new_line.txt','r')
