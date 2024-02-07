@@ -1,12 +1,6 @@
 import sys;sys.stdin = open('txt/string4.txt')
 t = int(input())
 for tc in range(1,t+1):
-    # 원형
-    # patten = input()
-    # text = input()
-    # n = len(patten)
-    # m = len(text)
-    # 패턴에 있는 글자중에 text에 들어가있는 글자의 수를 구해라
     """
     리스트로 만들어서 하나씩 for문으로 돌아가면서 비교해야되나?
     아니면 텍스트 그대로 쓸 수 있나?
