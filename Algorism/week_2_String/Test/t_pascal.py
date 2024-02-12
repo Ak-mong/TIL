@@ -1,5 +1,5 @@
 import sys;sys.stdin = open('../txt/pascal.txt')
-
+import pprint
 SIZE = 10+1
 memo = [[0] * SIZE for _ in range(SIZE)]
 for i in range(SIZE):
@@ -8,7 +8,7 @@ for i in range(SIZE):
             memo[i][j] = 1
         else:
             memo[i][j] = memo[i-1][j-1] + memo[i-1][j]
-
+pprint.pprint(memo)
 
 T = int(input())
 for tc in range(1,T+1):
@@ -16,7 +16,7 @@ for tc in range(1,T+1):
 
     # 출력
     print(f'#{tc}')
-    for i in range(N):
-        for j in range(i+1):
-            print(memo[i][j], end=' ')
-        print()
+    # for i in range(N):
+    #     for j in range(i+1):
+            # print(memo[i][j], end=' ')
+        # print()
