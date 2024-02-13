@@ -21,8 +21,11 @@ SSAFY TIL
 ## 구조
 
 서론 : 문제
+
 본론 : 풀었는 코드
+
 결론 : 해당 문제의 감상, 감정
+
 첨언 : 다른 사람의 풀이 내용 + 링크
 
 # CS (computaional science)
