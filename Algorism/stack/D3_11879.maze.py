@@ -8,7 +8,7 @@ def mazeGo(N):
         for j in range(N):
             if maze_arr[i][j] == 2:
                 r,c = i,j
-    print(r,c)
+    # print(r,c)
     # 이동경로
     stack = []
     # 방문확인
@@ -27,18 +27,19 @@ def mazeGo(N):
         if maze_arr[cur_r][cur_c] == 3:
             flag = 1
             return flag
-
+        isok = 0 # 해당 위치에서 갈 곳이 없는지 확인
+        # 4방향 체크
         for k in range(4):
-            nr = dr[k] + cur_r
-            nc = dc[k] + cur_c
+            nr = cur_r + dr[k]
+            nc = cur_c + dc[k]
             if 0 <= nr < N and 0 <= nc < N and maze_arr[nr][nc] != 1: # 벽체크
                 # 해야 되는 것
                 if visited[nr][nc] != 1: # 방문한 곳이 아니라면
                     stack.append((nr,nc))
                     visited[nr][nc] = 1
-                    flag = 1
+                    isok = 1
                     break
-        else:
+        if not isok: # 갈 곳이 없으면?
             stack.pop()
     return flag
 T = int(input())
@@ -48,4 +49,4 @@ for tc in range(1,T+1):
     maze_arr = [list(map(int,input())) for _ in range(N)]
     # print(maze_arr)
     stack = []
-    print(mazeGo(N))
+    print(f'#{tc} {mazeGo(N)}')
