@@ -1,30 +1,19 @@
 import sys;sys.stdin =open('txt/tournament_card.txt')
 def divided_person(i,j): # i번부터 j번까지 속한 그룹을 나눠버린다
-    a = len(list(range((i+j)//2+1))) # 0 ~ (i+j) // 2
-    b = len(list(range((i+j)//2+1, N))) # (i+j) //2 +1 ~ N
-    return a,b
+    if i == j: return i # 한명 남았다 => 모든 가위바위보가 완료됐다.
+    a = divided_person(i,(i+j)//2) # a그룹
+    b = divided_person((i+j)//2+1,j) # b그룹
+    return rsp(a,b) # a,b 중에 이긴 승자가 리턴된다.
 
-def rsp() : #rock scissors paper
-
-def divide_two(start, end):
-    if start == end:
-        return start  # 한명 남았다는 의미이므로 가위바위보를 위해 리턴
-
-    a = divide_two(start, (start + end) // 2)
-    b = divide_two((start + end) // 2 + 1, end)
-    return rsp(a, b)  # 가위바위보 실시
-
-
-def rsp(x, y):
-    if arr[x] == arr[y]:  # 비긴 경우
-        return x
-    elif arr[x] - arr[y] == 1 or arr[x] - arr[y] == -2:  # x가 이긴 경우
-        return x
-    return y
-
+def rsp(a,b): # 두 그룹간 가위바위보
+    if arr[a] == arr[b]: # 비길 때 a가 우선시 됨
+        return a
+    if arr[a]-arr[b] == 1 or arr[a] - arr[b] == -2:
+        return a # a가 이기는 상황
+    return b # a가 이길 상황이 안나왔기 때문
 
 T = int(input())
-for tc in range(T):
+for tc in range(1,T+1):
     N = int(input())
-    arr = list(map(int, input().split()))
-    # print(f'#{tc+1} {divide_two(0, N-1)+1}')
+    arr = [0] + list(map(int, input().split())) # 인덱스 개수를 맞추기 위해 [0] 을 추가했음
+    print(f'#{tc} {divided_person(1,N)}')
