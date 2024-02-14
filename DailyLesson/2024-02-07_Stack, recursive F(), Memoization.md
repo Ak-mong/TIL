@@ -1,3 +1,4 @@
+
 # Stack
 
 
@@ -73,11 +74,11 @@ def push(item): #파이썬 방법, list의 append 사용
 			print('overflow!'
 		else:
 			stack[top] = item
-
+	
 	size = 10
 	stack = [0] * size
 	top = -1
-
+	
 	push(10,size)
 	top += 1 # push(20)
 	stackptop] = 20
@@ -107,13 +108,13 @@ def pop(): #list 의 pop을 쓰는 방법
 		else:
 			top -= 1
 			return stack[top+1]
-
+	
 	print(pop())
-
+	
 	if top > -1: #pop() 보통 이렇게 짜는 편
 		top -= 1
 		print(stack[top+1])
-
+	
 	while top >=0: # while문 이용해서 할 수도 있다.
 		top -= 1
 	top = stack[top+1]
@@ -134,19 +135,19 @@ def pop(): #list 의 pop을 쓰는 방법
 	        print('Overflow!')
 	    else:
 	        stack[top] = n
-
+	
 	top = -1
 	size = 10
 	stack = [0] * size #최대 10개 push
-
+	
 	top += 1 #push(10)
 	stack[top] = 10
-
+	
 	top += 1 #push(20)
 	stack[top] = 20
-
+	
 	push(30)
-
+	
 	while top >= 0:
 	    top -= 1
 	    print(stack[top+1])
@@ -515,3 +516,4 @@ if stack: #stack이 안 비어 있다면
     print(stack.pop())
 print(stack) # [] 이쪽은 진짜로 지워짐
 ```
+
