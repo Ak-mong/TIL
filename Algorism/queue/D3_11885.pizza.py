@@ -1,4 +1,4 @@
-import sys; sys.stdin = open('pizza.txt')
+import sys; sys.stdin = open('txt/pizza.txt')
 #N개의 피자
 # 1~M+1
 T = int(input())
