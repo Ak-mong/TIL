@@ -1,26 +1,36 @@
 import sys; sys.stdin = open('input.txt')
+import math
 import time
-# N = input()
+# N = int(input())
+# # arr = list(map(int,input().split()))
+# arr = [input() for _ in range(N)]
+# arr = list(set(arr))
+# arr.sort()
+# # arr.sort()
+# # print(arr)
+# # arr_len = []
+# for i in range(len(arr)):
+#     # arr_len.append(len(i))
+#     for j in range(len(arr)-i-1):
+#         if len(arr[j])>len(arr[j+1]):
+#             arr[j],arr[j+1] = arr[j+1],arr[j]
+# # for x in range(len(arr)-1):
+# #     if len(arr[x]) == len(arr[x+1]):
+# #         # 사전순 정렬
+# #         for k in range(len(arr[x])):
+# #             if ord(arr[x][k]) > ord(arr[x+1][k]):
+# #                 arr[x],arr[x+1] = arr[x+1],arr[x]
+# for i in arr:
+#     print(i)
+# # print(arr)
 N = int(input())
-N_ = N
-new_num = 0
-cnt = 0 #사이클 횟수
-# while int(N) != new_num:
-#     new_num = 0
-#     if int(N) < 10:
-#         N = '0' + N
-#     for i in N:
-#         new_num += int(i)
-#     N = str(int(N[-1]) + new_num%10)
-#     cnt+= 1
-# print(cnt)
-while True:
-    new_num = 0
-    for i in str(N_):
-        new_num += int(i)
-    N_ = int(str(N_%10) + str(new_num%10))
-    # print(N_)
-    cnt += 1
-    if N_ == N:
-        break
-print(cnt)
+arr = [input() for _ in range(N)]
+arr = list(set(arr))
+arr.sort()
+arr.sort(key=len)
+# for i in range(len(arr)):
+#     for j in range(len(arr)-i-1):
+#         if len(arr[j]) > len(arr[j+1]):
+#             arr[j],arr[j+1] = arr[j+1],arr[j]
+
+for x in arr: print(x)
