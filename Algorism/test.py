@@ -1,28 +1,17 @@
 import sys;sys.stdin =open('input.txt')
-# 길이가 짧은 것부터
-# 길이가 같으면 사전 순으로 단어 정렬
-# 중복된 단어는 하나만 남기고 제거
-# lambda 이용
-# N = int(sys.stdin.readline().rstrip())
-# def MenOfPassion(n):
-#     global cnt
-#     sum = 0
-#     for i in range(1,n-1):
-#         for j in range(i+1,n):
-#             for k in range(j+1, n+1):
-#                 # sum = sum + arr[i] * arr[j] * arr[k] # 코드1
-#                 sum = sum + 1 * 2 * 3 # 코드1
-#                 cnt += 1
-#     return cnt
-# cnt = 0
-# arr = [0] * N
-# print(MenOfPassion(N))
-# print(3)
-n = int(input())
-cnt = n-2
-sum = 0
-for i in range(1,n-1):
-    sum += cnt*i
-    cnt -= 1
-print(sum)
-print(3)
+input=sys.stdin.readline
+n, m = map(int,input().split())
+# 1 <=  N,m <= 100000
+# 도감 번호와 이름이 연결되있어야 한다
+pokmon_dict1 = {}
+pokmon_dict2 = {}
+for i in range(n):
+    name = input().strip()
+    pokmon_dict1[name] = i+1
+    pokmon_dict2[i+1] = name
+for i in range(m):
+    find_pkmon = input().strip()
+    if find_pkmon.isdigit():
+        print(pokmon_dict2[int(find_pkmon)])
+    else:
+        print(pokmon_dict1[find_pkmon])
