@@ -5,9 +5,20 @@ def min_heap(node):
     heap[last] = arr[node]
     child = last
     parent = child // 2 # 완전 이진 트리라서 가능
-    if node <= n: # 노드 번호의 인덱스는 작아야된다.
-        if heap[last] > heap[last +1]:
-            heap[last],heap[last+1] = heap[last+1], heap[last]
+    if node<0:
+        return
+    while parent and heap[parent] > heap[child]: # 부모가 있는데 부모가 자식보다 크다면?
+        heap[parent] , heap[child] = heap[child],  heap[parent] # 교환
+        child = parent
+        parent = child//2
+def binar_sum():
+    value = 0
+    node = n //2 # 3 1 0
+    while node:
+        value += heap[node]
+        node //= 2
+    return value
+
 
 t = int(input())
 for tc in range(1,t+1):
@@ -21,4 +32,4 @@ for tc in range(1,t+1):
     last = 0
     for i in range(0,n):
         min_heap(i)
-    print(heap)
+    print(f'#{tc} {binar_sum()}')
