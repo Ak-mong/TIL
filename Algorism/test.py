@@ -1,24 +1,23 @@
 import sys;sys.stdin =open('input.txt')
 
-def maketree(node):
+def makeTree(node):
     global num
-    # 왼 현 오
-    if node <= n: # node가 n보다 작은 수 일때만
-        maketree(node *2) #왼
-        tree[node] = num # 현
-        num += 1 # node에 들어갈 수가 1~6이기 때문
-        maketree(node * 2 + 1)# 오
+    # 재귀로 할 거다.
+    if node <= n:
+        #후위
+        makeTree(node*2) #왼쪽 자식
 
-
-
+        makeTree(node*2+1) #오른 쪽 자식
+        tree[node] = arr[num]  # 부모
+        num += 1
 t = int(input())
 for tc in range(1,t+1):
     n = int(input())
-    # 루트 노드 : 1번 노드, 노드 != 값
-    tree = [0] * (n+1) # 트리의 길이
-    # print(tree)
-    num = 1 # 완전트리임으로 사용
-    maketree(1) # 시작 노드가 1번 노드
-    print(f'#{tc} {tree[1]} {tree[n//2]}')
-
-
+    arr = list(map(int,input().split()))
+    # print()
+    # 이진 최소값 구하기 => 재귀
+    # 일단 tree선언
+    tree = [0] * (n+1)
+    num = 0 # 노드 인덱스에 들어갈 arr[num] 값
+    makeTree(1) # 노드 번호는 루트가 1
+    print(tree)
