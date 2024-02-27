@@ -18,6 +18,7 @@ def baby_gin(arr):
     return 0
 def makePerm(x):
     global flag
+    
     if x == 6:
         if baby_gin(path): flag = 1
         # print(path, end=' ')
