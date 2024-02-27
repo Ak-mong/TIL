@@ -32,4 +32,5 @@ for tc in range(1,t+1):
     last = 0
     for i in range(0,n):
         min_heap(i)
+    print(heap)
     print(f'#{tc} {binar_sum()}')
