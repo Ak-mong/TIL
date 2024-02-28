@@ -5,44 +5,42 @@ import sys;sys.stdin= open('txt/baby_gin_greed.txt')
 6개 고르기
 순열 만들기 -> 반 씩 쪼개서 3개씩 여부 확인
 '''
+def baby_gin(arr):
+    # run판단
+    for x in range(len(arr)-2):
+        if arr[x] >= 1 and arr[x+1] >= 1 and arr[x+2]>= 1:
+            return True
+    # triplet 판단
+    for y in range(len(arr)):
+        if arr[y] == 3:
+            return True
+    return False
+
+def whoisWin():
+    for i in range(6):
+        count_a[arr[i * 2]] += 1  # 홀수 인덱스
+        count_b[arr[i * 2 + 1]] += 1  # 짝수 인덱스
+        if baby_gin(count_a):
+            return 1
+        elif baby_gin(count_b):
+            return 2
+    return 0
+
 t = int(input())
 for tc in range(1,t+1):
-    # print('#',tc)
     arr = list(map(int,input().split()))
-    a_arr = []
-    b_arr = []
-    run_a,run_b = 0,0
-    triplet_a,triplet_b = 0,0
-    babygin_a,babygin_b = 0,0
-    for i in range(12):
-        if i%2: # 짝수 인덱스 1 3 5 7 ....
-            # 2번 선수
-            b_arr.append(arr[i])
-            if len(b_arr) >= 3:
-                b_arr.sort()
-                for j in range(2, len(b_arr)):
-                    if b_arr[j - 2] == b_arr[j - 1] == b_arr[j]:
-                        triplet_b += 1
-                    if b_arr[j - 2] == b_arr[j - 1] - 1 == b_arr[j] - 2:
-                        run_b += 1
-            babygin_b = triplet_b + run_b
-            # print(b_arr, run_b, triplet_b)
-        else:
-            # 1번 선수
-            a_arr.append(arr[i])
-            if len(a_arr) >= 3:
-                a_arr.sort()
-                for j in range(2, len(a_arr)):
-                    if a_arr[j - 2] == a_arr[j - 1] == a_arr[j]:
-                        triplet_a += 1
-                    if a_arr[j - 2] == a_arr[j - 1] - 1 == a_arr[j] - 2:
-                        run_a += 1
-            babygin_a = triplet_a + run_a
-            # print(a_arr, run_a, triplet_a)
-        if babygin_a < babygin_b:
-            flag = 2
-        elif babygin_a > babygin_b:
-            flag = 1
-    if babygin_a == babygin_b:
-        flag =0
-    print(f'#{tc} {flag}')
+    n = len(arr)
+    card = 10
+    count_a = [0]*10
+    count_b = [0]*10
+
+    print(f'#{tc} {whoisWin()}')
+    # print(count_a)
+    # print(count_b)
+    # print(result)
+
+
+
+
+
+
