@@ -1,8 +1,4 @@
-import sys;
-sys.stdin =open('input.txt')
-# dij1 = [[0,-1],[0,1]]# 1번 거울, 위 to 왼, 아 to 오
-# dij2 = [[0,1],[0,-1]]# 2번 거울, 위 to 오, 아 to 왼
-dij = [[0,1],[1,0],[0,-1],[-1,0]] # 오 위 왼 아
+import sys;sys.stdin= open('txt/mirror')
 t = int(input())
 for tc in range(1,t+1):
     n = int(input())

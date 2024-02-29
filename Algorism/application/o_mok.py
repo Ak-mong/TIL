@@ -1,6 +1,8 @@
 import sys;sys.stdin=open('txt/o_mok.txt')
+import time
 dy = [1,0,1,-1] # 아 오 대각, 역대각
 dx = [0,1,1,1]
+start_time = time.time()
 def o_mok(y,x):
     # 4방향 탐색
     for bang in range(4):
@@ -9,7 +11,7 @@ def o_mok(y,x):
         for power in range(1, 5):
             ny = y + (dy[bang] * power)
             nx = x + (dx[bang] * power)
-            if not (0 < ny <= n and 0 < nx <= n): break
+            if not (0 <= ny < n and 0 <= nx < n): break
             # 돌을 발견하면 count
             if arr[ny][nx] == 'o': cnt += 1
             if cnt == 5:  # 오목 발견
@@ -23,7 +25,6 @@ def game_start():
                     return 'YES'
     return 'NO'
 
-
 t = int(input())
 for tc in range(1,t+1):
     n = int(input())
@@ -31,3 +32,4 @@ for tc in range(1,t+1):
     result = game_start()
     print(f'#{tc} {result}')
 
+# print(time.time() - start_time)
