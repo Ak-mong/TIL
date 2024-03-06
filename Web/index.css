@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+header>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 0;
+}
+dl{
+  padding: 2%;
+  line-height:3vh;
+}
+dl dt{
+  font-weight: bolder;
+}

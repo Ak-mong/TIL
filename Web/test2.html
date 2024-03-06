@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <form action="post">
+    <label onclick="focusOn">USERNAME: <input type="text" placeholder="아이디를 입력 해 주세요." id="clicks"><button>로그인</button></label>    
+  </form>
+  <form action="post">
+    <label onclick="focusOn">PWD : <input type="password" id="clicks"><button>로그인</button></ label>
+  </form>
+</body>
+<script>
+  function focusOn(){
+    document.getElementById("clicks").focus()
+  }
+  
+</script>
+</html>
