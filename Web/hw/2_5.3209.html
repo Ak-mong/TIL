@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+*{
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+.menu-bar{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #666;
+}
+h1 {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  height: 10vw;
+  line-height: 10vw;
+}
+.section-wrap{
+  display:flex;
+  /* gap: 1%; */
+  justify-content: space-between;
+}
+.section{
+}
+.book-container {
+  /* box-sizing: border-box; */
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.book-container img{
+  width: 100%;
+}
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 14px;
+  color: #888;
+}
+
+.section-title {
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+}
+
+.top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.top-button a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bottom{
+  width: inherit;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="height: 3000px;">
+  <h1>도서 관리 서비스</h1>
+  <div class="menu-bar">
+    <a href="#">홈</a>
+    <a href="#">베스트 셀러</a>
+    <a href="#">신간 도서</a>
+    <a href="#">사서 추천</a>
+  </div>
+  <div class="section-wrap">
+  <div class="section">
+    <div class="section-title">베스트 셀러 목록</div>
+    <div class="book-list">
+      <div class="book-container">
+        <img src="book1.jpg" alt="photo">
+        <h2 class="book-title">도서 제목 1</h2>
+        <p class="book-author">저자 1</p>
+        <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
+      </div>
+
+      <div class="book-container">
+        <img src="book1.jpg" alt="photo">
+        <h2 class="book-title">도서 제목 2</h2>
+        <p class="book-author">저자 2</p>
+        <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+</div>
+  <div class="section">
+    <div class="section-title">신간 도서 목록</div>
+    <div class="book-list">
+      <div class="book-container">
+        <img src="book1.jpg" alt="사진">
+        <h2 class="book-title">도서 제목 1</h2>
+        <p class="book-author">저자 1</p>
+        <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
+      </div>
+
+      <div class="book-container">
+        <img src="book1.jpg" alt="사진">
+        <h2 class="book-title">도서 제목 2</h2>
+        <p class="book-author">저자 2</p>
+        <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">사서 추천 도서 목록</div>
+    <div class="book-list">
+      <div class="book-container">
+        
+        <img src="book1.jpg" alt="사진">
+        <h2 class="book-title">도서 제목 1</h2>
+        <p class="book-author">저자 1</p>
+        <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
+      </div>
+
+      <div class="book-container">
+        
+        <img src="book1.jpg" alt="사진">
+        <h2 class="book-title">도서 제목 2</h2>
+        <p class="book-author">저자 2</p>
+        <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="bottom">
+    <p>도서 관리 서비스</p>
+  </div>
+  <div class="top-button">
+    <a href="#">TOP</a>
+  </div>
+
+</body>
+</html>

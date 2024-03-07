@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card-wrap{
+      border: 1px solid black;
+      width: 40%;
+      overflow: hidden;
+      
+    }
+    .relative-div{
+      position: relative;
+      text-align: center;
+
+    }
+    .relative-div img{
+      margin: 0 auto;
+    }
+    .pf-name{
+      position: absolute;
+      width: 100%;
+      bottom: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: antiquewhite;
+      font-size:1.5em;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-wrap">
+    <div class="relative-div">
+      <img src="profile.jpg" alt="Profile Image">
+      <p class="pf-name">Name</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde officiis ad nostrum. Laboriosam mollitia similique provident fuga tenetur saepe sit, amet eaque neque eius quaerat expedita ea illum veniam.</p>
+  </div>
+</body>
+</html>
