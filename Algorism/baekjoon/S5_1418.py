@@ -1,8 +1,10 @@
 import sys;sys.stdin=open('input.txt')
-
+# 실버5
 n = int(input())
 k = int(input())
 result = 0
+
+# 소수 구하기
 
 
 
