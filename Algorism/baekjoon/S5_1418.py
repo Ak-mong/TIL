@@ -4,13 +4,7 @@ n = int(input())
 k = int(input())
 result = 0
 
-# 소수찾기
-prime_num = [1] * (n*1)
-for i in range(2,int(n**0.5)+1):
-    if prime_num[i]:
-        for j in range(2*i,n,i):
-            prime_num[j] = 0
-print(prime_num)
+
 
 
 
