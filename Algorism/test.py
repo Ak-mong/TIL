@@ -2,16 +2,51 @@ import sys;
 sys.stdin =open('input.txt')
 import time
 # starttime = time.time()
-# 너의 평점은 실버 5 25206
-arr = [list(sys.stdin.readline().split()) for _ in range(20)]
-grade = {'A+': 4.5, 'A0': 4.0,'B+': 3.5,'B0': 3.0,'C+': 2.5,'C0': 2.0,'D+': 1.5,'D0': 1.0,'F': 0.0}
-sum_v = 0
-score_v = 0
-for i in arr:
-    score = float(i[1]) #
-    if i[2] == 'P': continue
-    grade_v = grade[i[2]]
-    sum_v += score * grade_v
-    score_v += score
-print(sum_v/score_v)
-# print(arr)
+# 1316 그룹 단어 체커 실버5
+
+'''
+한개짜리 단어도 ok
+같은 문자열이 이어져야된다
+
+'''
+def check_word(word):
+    global result
+    dicts = {}
+    cnt = 0
+    for i in range(len(word)):
+        if dicts.get(word[i]): # 딕셔너리 값이 있따면
+            dicts[word[i]] += 1
+        else: # 값이 없다면
+            dicts[word[i]] = 1
+    for j in range(len(word)-1):
+        # 전 인덱스와 비교해서 다를 때
+        if word[j] != word[j+1]:
+            # 현재 개수가 cnt와 다르다면 cnt = 1 로 만든다
+            if cnt+1 != dicts.get(word[j]): return
+            cnt = 0
+        else:
+            cnt += 1
+    print(dicts)
+    result += 1
+
+
+n = int(input())
+result = 0
+for _ in range(n):
+    word = input()
+    check_word(word)
+print(result)
+
+# N = int(input())
+# cnt = N
+#
+# for i in range(N):
+#     word = input()
+#     for j in range(len(word)-1):
+#         if word[j] == word[j+1]:
+#             pass
+#         elif word[j] in word[j+1:]:
+#             cnt -= 1
+#             break
+#
+# print(cnt)
