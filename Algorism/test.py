@@ -2,51 +2,34 @@ import sys;
 sys.stdin =open('input.txt')
 import time
 # starttime = time.time()
-# 1316 그룹 단어 체커 실버5
 
-'''
-한개짜리 단어도 ok
-같은 문자열이 이어져야된다
+friends = ['a','b','c','d','e']
+m = 5 # 친구의 수
+n = 3
 
-'''
-def check_word(word):
-    global result
-    dicts = {}
-    cnt = 0
-    for i in range(len(word)):
-        if dicts.get(word[i]): # 딕셔너리 값이 있따면
-            dicts[word[i]] += 1
-        else: # 값이 없다면
-            dicts[word[i]] = 1
-    for j in range(len(word)-1):
-        # 전 인덱스와 비교해서 다를 때
-        if word[j] != word[j+1]:
-            # 현재 개수가 cnt와 다르다면 cnt = 1 로 만든다
-            if cnt+1 != dicts.get(word[j]): return
-            cnt = 0
-        else:
-            cnt += 1
-    print(dicts)
-    result += 1
+# 반복문 방법
+for a in range(5):
+	start1 = a+1
+	for b in range(start1,5):
+		start2 = b + 1
+		for c in range(start2,5):
+			print(friends[a], friends[b], friends[c])
 
+# 재귀 방법
+path = []
+# 5C2
+def getFriend(lev, start):
+    if lev ==n:
+        print(path)
+        return
 
-n = int(input())
-result = 0
-for _ in range(n):
-    word = input()
-    check_word(word)
-print(result)
+    for i in range(start,5):
+        if used[i]: continue
+        used[i] = 1
+        path.append(friends[i])
+        getFriend(lev + 1, i+1)
+        path.pop()
+        used[i] = 0
 
-# N = int(input())
-# cnt = N
-#
-# for i in range(N):
-#     word = input()
-#     for j in range(len(word)-1):
-#         if word[j] == word[j+1]:
-#             pass
-#         elif word[j] in word[j+1:]:
-#             cnt -= 1
-#             break
-#
-# print(cnt)
+used = [0] * len(friends)
+getFriend(0,0)
