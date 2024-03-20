@@ -2,20 +2,25 @@ import sys;
 sys.stdin =open('input.txt')
 import time
 # starttime = time.time()
-
 n,m = map(int,input().split())
-def find(level):
-    if level == m:
-        print(path)
-        return
-    for i in range(n):
-        if visited[i]:
-            visited[i] = 1
-            path.append(i)
-            visited[i] = 0
-            path.pop()
-
 path = []
-visited = [0] * n
-find(0)
+path_wrap = []
+visited = [False] * (n+1)
+def perm(level):
+    if level ==m:
+        paths = path[:]
+        paths.sort()
+        if paths not in path_wrap:
+            path_wrap.append(paths)
+        return
+    for i in range(1,n+1):
+        if visited[i]: continue
+        visited[i] = True
+        path.append(i)
+        perm(level+1)
+        path.pop()
+        visited[i] = False
 
+perm(0)
+for i in path_wrap:
+    print(*i)

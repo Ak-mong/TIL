@@ -23,7 +23,7 @@ temp = list(map(int,input().split()))
 
 adj_lst = {i:[] for i in range(1,V+1)} # 인접리스트 (딕셔너리)
 # adj_lst = [[] for i in range(V+1)] # 인접 리스트 (리스트)
-print(adj_lst)
+# print(adj_lst)
 visited = [0] * (V+1)
 
 for i in range(E):

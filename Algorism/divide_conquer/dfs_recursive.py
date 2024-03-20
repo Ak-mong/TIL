@@ -29,9 +29,10 @@ def dfs(level):
         # 조건 1~~~
         if arr[i] in path:
             continue
+        ''''# 조건 2~~~
         if 조건 2:
             continue
-
+        '''
         path[level] = arr[i]
         dfs(level+1)
         # 갔다와서 할 로직
