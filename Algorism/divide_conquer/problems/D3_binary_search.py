@@ -1,4 +1,4 @@
-import sys; sys.stdin=open('D3_binary_search.txt')
+import sys; sys.stdin=open('binary_search.txt')
 
 def binary_search(target):
     global cnt

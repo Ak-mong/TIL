@@ -1,4 +1,4 @@
-import sys;sys.stdin= open('D3_quick_sort.txt')
+import sys;sys.stdin= open('quick_sort.txt')
 
 
 def partition(arr,left,right): # 피봇 찾기
