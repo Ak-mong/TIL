@@ -1,7 +1,18 @@
-import sys;sys.stdin=open('input.txt',"r")
+# import sys;sys.stdin=open('input.txt',"r")
 from heapq import heappush,heappop # 우선순위 큐라서 사용해야 한다.
 '''
-
+7 11
+0 1 32
+0 2 31
+0 5 60
+0 6 51
+1 2 21
+2 4 46
+2 6 25
+3 4 34
+3 5 18
+4 5 40
+4 6 51
 '''
 
 def prim(start):
@@ -21,7 +32,7 @@ def prim(start):
         1. class 로 만들기
         2. 튜플로 관리
     이차원배열 + 가중치 + 높이 라면? 튜플로 관리하기 어렵다.
-    => 3가지 이상으로 클래스로 해야한다.
+    => 3가지 이상은 클래스로 해야한다.
     '''
     heappush(pq, (0,start))
 
@@ -39,7 +50,7 @@ def prim(start):
         MST[now] = 1
         # 누적 합 추가
         sum_weight += weight
-
+        print(weight, end=' ')
         # 갈수 있는 노드들을 보면서
         for to in range(V):
             if graph[now][to] == 0 or MST[to]: # 합친것
@@ -59,7 +70,7 @@ def prim(start):
 V, E = map(int,input().split())
 # 인접 행렬로 저장
 # - [실슴] 인접 리스트로 저장
-graph = [[0] * V for _ in range(V)]
+graph = [[0] * (V+1) for _ in range(V+1)]
 for _ in range(E):
     s,e,w = map(int,input().split())
     # 가중치 저장
@@ -72,7 +83,7 @@ for _ in range(E):
     '''
     graph[s][e] = w
     graph[e][s] = w  # 무방향 그래프
-print(graph)
+# print(graph)
 prim(0)
 '''
 BFS : 무조건 방문

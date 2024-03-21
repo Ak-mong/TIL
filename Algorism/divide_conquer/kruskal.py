@@ -1,4 +1,4 @@
-import sys;sys.stdin = open('input.txt')
+# import sys;sys.stdin = open('input.txt')
 '''
 1. 전체 그래프를 보고, 가중치가 제일 작은 간선부터 뽑자
     -> 코드로 구현: 전체 간선 정보를 저장 + 가중치로 정렬
