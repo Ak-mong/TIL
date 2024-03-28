@@ -1,22 +1,19 @@
 import sys
 from collections import deque
 sys.stdin =open('input.txt')
-# input = sys.stdin.readline()
-from collections import deque
+
+# 2217 로프 실버4
+# (값 * 값의 인덱스)가 가장 큰 값
 n = int(input())
-arr = deque(map(int,input().split()))
-
-# arr.reverse()
-print(arr)
-new_arr = deque()
-
-for i in range(1,n+1):
-    method = arr.pop()
-    if method == 1:
-        new_arr.appendleft(i)
-    elif method == 2:
-        new_arr.insert(1,i)
-    else:
-        new_arr.append(i)
-print(new_arr)
-
+rope = []
+for _ in range(n):
+    w = int(input())
+    rope.append(w)
+# print(rope)
+rope.sort(reverse=True)
+max_v = 0
+for i in range(n,0,-1):
+    sum = i * rope[i-1]
+    if max_v < sum:
+        max_v = sum
+print(max_v)

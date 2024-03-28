@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block style %}
+.carousel-item{
+  width:100%;
+}
+{% comment %} @include media-breakpoint-up(xxl) { .carousel-item{width:1320px;} } {% endcomment %}
+@media (min-width: 1400px) { header{width:1320px; margin:0 auto;} }
+{% endblock style %}
+
+{% block content %}
+{% load static %}
+<nav>{% include "nav.html" %}</nav>
+<header>
+  <div class="container-xxl">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for i in header %}
+        <div class="carousel-item {% if forloop.first %}active {% endif %} ">
+          <img src="{% static i %}" class="d-block" alt="header{{forloop.counter}}" style = "height:100vh">
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container mt-4">
+    <h1 class='display1 text-center'>Box Office</h1>
+    <div class='row row-col-1 row-col-md-2 row-col-lg-3 justify-content-center'>
+    {% for file, title, content in movie_arr %}
+      <div class="card mt-3 m-2" style="width: 18rem;">
+        <div >
+          <img src="{% static file %}" alt="movie{{forloop.counter}}" class='card-img-top' style = 'height:50vh'>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{title}}</h5>
+          <p class="card-text">{{content}}</p>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

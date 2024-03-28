@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block style %}
+
+{% endblock style %}
+{% block content %}
+<nav>{% include "nav.html" %}</nav>
+
+<h1 class="display1 text-center m-5">Community</h1>
+{% comment %} container 시작 {% endcomment %}
+<div class="container d-lg-none"> 
+  {% comment %} aside 시작 {% endcomment %}
+  <aside>
+    <ul class="list-group">
+      <li class="list-group-item">Box Office</li>
+      <li class="list-group-item">Movies</li>
+      <li class="list-group-item">Genres</li>
+      <li class="list-group-item">Actors</li>
+    </ul>
+  </aside>
+  {% comment %} aside 끝 {% endcomment %}
+
+  {% comment %} section {% endcomment %}
+  <section class='mt-4'>
+    {% for _ in int_arr %}
+    <hr>
+    <article class="fw-bold ">
+      <div class="d-flex justify-content-between "> 
+        <p class='my-2'>Best Movie Ever</p>
+        <p class='my-2'>user</p>
+      </div>
+      <p class='my-2'>Great Moive Title</p>
+      <p class='my-2'>1 minute ago</p>
+    </article>
+    {% endfor %}
+  </section>
+</div> {% comment %} container끝  {% endcomment %}
+
+
+{% comment %} 992px 이상 container {% endcomment %}
+<div class="container d-none d-lg-block">
+  {% comment %} aside 시작 {% endcomment %}
+  <div class="aside-wrap row gx-5">
+    <aside class="col-2">
+      <ul class="list-group">
+        <li class="list-group-item">Box Office</li>
+        <li class="list-group-item">Movies</li>
+        <li class="list-group-item">Genres</li>
+        <li class="list-group-item">Actors</li>
+      </ul>
+    </aside>
+    {% comment %} aside 끝 {% endcomment %}
+
+    {% comment %} section 시작 {% endcomment %}
+    <section class='col-10'>
+      <table class="table table-striped">
+        <thead>
+          <tr class="fw-bold">
+            <th scope="col">영화 제목</th>
+            <th scope="col">글 제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">작성시간</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for _ in int_arr %}
+            <tr>
+              <td>Great Moive Title</td>
+              <td>Best Movie Ever</td>
+              <td>user</td>
+              <td>1 minute ago</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+    </section>
+  </div>  
+</div> {% comment %} container끝  {% endcomment %}
+
+
+{% comment %} pagination 시작{% endcomment %}
+<nav aria-label="Page navigation example" class="mt-4">
+  <ul class="pagination justify-content-center">
+    <li class="page-item ">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+{% comment %} pagination 끝 {% endcomment %}
+
+{% endblock content %}
