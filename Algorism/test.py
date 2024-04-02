@@ -2,18 +2,13 @@ import sys
 from collections import deque
 sys.stdin =open('input.txt')
 
-# 2217 로프 실버4
-# (값 * 값의 인덱스)가 가장 큰 값
-n = int(input())
-rope = []
-for _ in range(n):
-    w = int(input())
-    rope.append(w)
-# print(rope)
-rope.sort(reverse=True)
-max_v = 0
-for i in range(n,0,-1):
-    sum = i * rope[i-1]
-    if max_v < sum:
-        max_v = sum
-print(max_v)
+# 5639 이진 검색 트리 골드5
+# 전위 순회 결과를 보고 후위순회 결과를 만들어라
+
+lines = sys.stdin.readline()
+# print(lines)
+# print(lines)
+for line in lines:
+    print(line.split())
+    # value = int(line)
+    # print(value)
