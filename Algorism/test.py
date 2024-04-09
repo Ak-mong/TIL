@@ -4,6 +4,22 @@ sys.stdin =open('input.txt')
 input = sys.stdin.readline
 #sys.setrecursionlimit(10**6)
 
+# 2716 원숭이 매달기 실버2
+n = int(input())
+for i in range(n):
+    strings = input().strip()
+    tree = []
+    max_depth = 0
+    for x in strings:
+        if x == '[':
+            tree.append(x)
+        else:
+            max_depth = max(max_depth, len(tree))
+            tree.pop()
+    print(2 ** max_depth)
+
+
+
 # 5639 이진 검색 트리 골드 5
 '''
 완전 이진트리가 아닌데 이진검색을 함
@@ -54,35 +70,35 @@ input = sys.stdin.readline
 #     print(node)
 
 
-import sys
-
-sys.setrecursionlimit(10 ** 9)
-nums = []
-while True:
-    try:
-        nums.append(int(sys.stdin.readline()))
-    except:
-        break
-
-
-def postorder(s, e):
-    if s > e:
-        return
-    mid = e + 1  # 오른쪽 노드가 없을 경우
-
-    for i in range(s + 1, e + 1):
-        if nums[s] < nums[i]:
-            mid = i
-            break
-
-    postorder(s + 1, mid - 1)  # 왼쪽 확인
-    postorder(mid, e)  # 오른쪽 확인
-    print(nums[s])
-
-
-postorder(0, len(nums) - 1)
-
-dict = {}
+# import sys
+#
+# sys.setrecursionlimit(10 ** 9)
+# nums = []
+# while True:
+#     try:
+#         nums.append(int(sys.stdin.readline()))
+#     except:
+#         break
+#
+#
+# def postorder(s, e):
+#     if s > e:
+#         return
+#     mid = e + 1  # 오른쪽 노드가 없을 경우
+#
+#     for i in range(s + 1, e + 1):
+#         if nums[s] < nums[i]:
+#             mid = i
+#             break
+#
+#     postorder(s + 1, mid - 1)  # 왼쪽 확인
+#     postorder(mid, e)  # 오른쪽 확인
+#     print(nums[s])
+#
+#
+# postorder(0, len(nums) - 1)
+#
+# dict = {}
 
 
 
