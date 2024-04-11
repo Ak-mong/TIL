@@ -4,19 +4,23 @@ sys.stdin =open('input.txt')
 input = sys.stdin.readline
 #sys.setrecursionlimit(10**6)
 
-# 2716 원숭이 매달기 실버2
-n = int(input())
-for i in range(n):
-    strings = input().strip()
-    tree = []
-    max_depth = 0
-    for x in strings:
-        if x == '[':
-            tree.append(x)
-        else:
-            max_depth = max(max_depth, len(tree))
-            tree.pop()
-    print(2 ** max_depth)
+# 11866 요세푸스 문제 0 실버5
+n,k = map(int,input().split())
+deq = deque()
+for p in range(1,n+1):
+    deq.append(p)
+cnt = 0
+path = []
+while deq:
+    if cnt == k:
+        b = deq.popleft()
+        cnt = 0
+        path.append(b)
+    else:
+        cnt += 1
+        a = deq.pop()
+        deq.append(a)
+print(path)
 
 
 
