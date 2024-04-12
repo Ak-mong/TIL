@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block style %}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td{
+    word-break: keep-all;
+    min-width:10vw;
+  }
+{% endblock style %}
+
+
+{% block content %}
+<h1>문제 1. 데이터 읽어오기</h1>
+{% comment %} {{df}} {% endcomment %}
+<hr>
+<table>
+  <tr>
+  {% for column in df.columns %}
+    <th>{{column}}</th>
+    {% endfor %}
+  </tr>
+  {% for value in df.values %}
+  <tr>
+    {% for val in value %}
+    <td>{{val}}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+<hr>
+{{df.values}}
+
+{% endblock content %}
