@@ -28,7 +28,7 @@ print(main)
 # - 해당 태그를 가진 모든 요소를 검색
 # - 리스트로 반환된다.
 a_tags = soup.find_all('a')
-print(a_tags)
+# print(a_tags)
 
 # 3. CSS 선택자로 하나를 선택
 # 선택자가 일치하는 첫 번 째 글
