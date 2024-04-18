@@ -1,37 +1,42 @@
 import sys
-from collections import deque
 sys.stdin =open('input.txt')
 input = sys.stdin.readline
+from collections import deque
 #sys.setrecursionlimit(10**6)
+import time
+start_time = time.time()
+# 1463 1로 만들기 실버 3
 
-# 12851 숨바꼭질 2 골드4
-# 1697 숨바꼭질 실버 1
-# T/F 식 풀이
+n = int(input())
+# dp = [[0] for _ in range(n)]
+dp = [0] * (n+1)
+for i in range(2,n+1):
+    dp[i] = dp[i-1] + 1
+    if i%2 ==0:
+        dp[i] = min(dp[i], dp[i//2] + 1)
+    if i%3 == 0:
+        dp[i] = min(dp[i], dp[i//3] + 1)
+print(dp[n])
+# min_cnt = 1e6
+# deq = deque()
+# deq.append((n,0))
+# cnt2 =0
+# while deq:
+#     cnt2 += 1
+#     value,cnt = deq.popleft()
+#     if value == 1:
+#         min_cnt = min(min_cnt, cnt)
+#         break
+#     for i in [3,2,1]:
+#         if i == 3 and value%3 == 0:
+#             deq.append((value//3,cnt + 1))
+#         elif i == 2 and value%2 == 0:
+#             deq.append((value // 2, cnt + 1))
+#         elif i == 1: deq.append((value-1, cnt + 1))
+# print(min_cnt)
+# print(cnt2)
+# print(start_time-time.time())
 
-def bfs(v):
-    global min_cnt
-    deq = deque()
-    deq.append((v,0))
-    while deq:
-        value,cnt = deq.popleft()
-        if value == k:
-            counting[cnt] += 1
-            if min_cnt >= cnt:
-                min_cnt = cnt
-                # break
-        for i in [value * 2, value + 1, value - 1]:
-            if 0 <= i <= int(1e5) and not visited[i]:
-                visited[i] = True
-                deq.append((i, cnt+1))
-
-
-n,k = map(int,input().split())
-visited = [False] * 100001
-counting = [0] * 100001
-min_cnt = int(1e10)
-bfs(n)
-print(min_cnt)
-print(counting[:k])
 # 5639 이진 검색 트리 골드 5
 '''
 완전 이진트리가 아닌데 이진검색을 함

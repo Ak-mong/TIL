@@ -47,7 +47,7 @@
         })
       }
     }
-    console.log(myObj2.myFunc())
+    console.log(myObj2.myFunc()) //undefined
 
     // 3.2 화살표 함수 (외부 함수의 this를 사용)
     const myObj3 = {
@@ -58,7 +58,8 @@
         })
       }
     }
-    console.log(myObj3.myFunc())
+    myObj3.myFunc() // object console 3개 찍힘
+    // console.log(myObj3.myFunc()) //undefined
 
   </script>
 </body>

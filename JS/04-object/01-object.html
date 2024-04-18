@@ -11,6 +11,7 @@
   <script>
     const user = {
       name: 'Alice',
+      age:30,
       'key with space': true,
       greeting: function () {
         return 'hello'
@@ -19,6 +20,8 @@
 
     // 조회
     console.log(user.name) // Alice
+    console.log(user[name]) // undefined
+    console.log(user['name']) // Alice
     console.log(user['key with space']) // true
 
     // 추가
