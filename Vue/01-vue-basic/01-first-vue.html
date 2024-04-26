@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{message}}</h1> <!-- message 변수 적용하는 법 -->
+    <button @click="count++">카운팅 : {{count}}</button>  <!-- 클릭으로 카운팅이 오름 -->
+  </div>
+  <h2> {{message}} </h2> <!-- app 밖에 있기 때문에 사용하지 못함 -->
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    // const createApp = Vue.createApp
+    // const ref = Vue.ref
+    // 단축 형태
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      // setup : function(){ }
+      // 단축 형태
+      setup(){
+        const message = ref('Hello Vue!') // 재 할당 못하는 것을 가능하게 해줌
+        const count = ref(0)
+        return { // 객체를 리턴함
+          // message: message, 
+          message, // 단축 속성 
+          count
+        } 
+      }
+    })
+
+    app.mount('#app') // 연결할 대상 선택자로 선택, app의 코드를 수정 시 바로 적용됨
+  </script>
+</body>
+
+</html>

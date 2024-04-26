@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>{{count}}</p>
+    <button v-on:click="increment">button</button> <!-- Vue 에서 증가하는 방식 -->
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+  // vanila JS 라면
+  /*  button을 선택
+      button에 이벤트 리스너를 부착 ( 클릭 이벤트에 반응)
+      p 태그 선택
+      p 태그의 컨텐를 변수에 저장
+      그 변수값을 1 증가
+      의 과정을 거쳐야함 */
+    const {createApp, ref} = Vue
+    const app = createApp({
+      setup(props) {
+        const count = ref(0)
+        const increment = function(){
+          count.value++
+        }
+        return {
+          count,
+          increment
+        }
+      }
+    })
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
