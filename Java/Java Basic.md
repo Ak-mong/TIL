@@ -1,3 +1,3 @@
  OOP
- - Encapsulation(은닉화), Inheritance(ㅅ, Polymorphism
+ - Encapsulation(은닉화), Inheritance(상속), Polymorphism()
  - 
