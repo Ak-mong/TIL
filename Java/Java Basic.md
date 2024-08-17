@@ -1,2 +1,3 @@
  OOP
- - Encapsulation, In
+ - Encapsulation, Inheritance
+ - 
