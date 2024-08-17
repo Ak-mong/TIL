@@ -4,7 +4,10 @@ public class Main {
         int[] resultArray= new int[5];
         for (int i=0; i < resultArray.length; i++){
             resultArray[i] = (int) (Math.random() + N) +1;
-            
+
+        }
+        for (int x : resultArray){
+            System.out.println(x)
         }
 
         System.out.println("Hello world!");
