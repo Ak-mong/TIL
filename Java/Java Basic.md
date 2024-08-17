@@ -1,3 +1,3 @@
  OOP
  - Encapsulation, Inheritance
- - Polym
+ - Polymorphism
