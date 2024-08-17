@@ -7,7 +7,7 @@ public class Main {
 
         }
         for (int x : resultArray){
-            System.out.println(x)
+            System.out.println(x);
         }
 
         System.out.println("Hello world!");
