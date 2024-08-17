@@ -8,13 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "30e044e073d48423",
+            "id": "8b3285b01f99feb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Java Basic.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30e044e073d48423",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java Basic.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -138,7 +150,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -155,8 +167,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "30e044e073d48423",
+  "active": "8b3285b01f99feb1",
   "lastOpenFiles": [
+    "Java Basic.md",
     "untitled/out/production/untitled/Main.class",
     "untitled/out/production/untitled",
     "untitled/out/production",
@@ -167,7 +180,6 @@
     "untitled",
     "test.java~",
     "무제 파일.canvas",
-    "무제 파일.md",
-    "Java Basic.md"
+    "무제 파일.md"
   ]
 }
