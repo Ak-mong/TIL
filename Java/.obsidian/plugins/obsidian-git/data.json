@@ -1,5 +1,5 @@
 {
-  "commitMessage": "{{date}}_{{files}}",
+  "commitMessage": "{{date}}",
   "commitDateFormat": "YYMMDD",
   "autoSaveInterval": 0,
   "autoPushInterval": 30,
