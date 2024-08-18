@@ -123,8 +123,7 @@ if ( cc instanceof MainCustomer){
 }
 ```
 
-> instanceof
->
+
 
 > [!NOTE]  instanceof
 >  - 전달되어온 변수의 객체 타입이 무엇인지를 정확하게 확인하여 작업하고자 할 때에는 instanceof 연산자를 이용한다.
