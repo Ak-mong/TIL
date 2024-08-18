@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "12149b98eb639b94",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,8 +156,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "12149b98eb639b94",
+  "active": "8b3285b01f99feb1",
   "lastOpenFiles": [
+    "untitled/src/Main.java~",
     "untitled/out/production/untitled/Main.class",
     "untitled/out/production/untitled/Cat.class",
     "untitled/out/production/untitled/Dog.class",
@@ -180,7 +170,6 @@
     "untitled/untitled.iml",
     "untitled/src/Main.java",
     "untitled/src",
-    "untitled",
     "무제 파일.canvas",
     "무제 파일.md"
   ]

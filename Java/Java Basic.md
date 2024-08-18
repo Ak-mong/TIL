@@ -1,6 +1,6 @@
 # OOP
  - Encapsulation(은닉화), Inheritance(상속), Polymorphism(다형성)
-## Encapsulation 은닉화
+# Encapsulation 은닉화
 하나의 클래스 안에 데이터와 기능을 담아 정의하고, 중요한 데이터나 복잡한 기능 등은 숨기고, 외부에서 사용에 필요한 기능만을 공개하는 것
 +하면 public : 외부에서 바로 접근이 되버림
 -하면 private 라고 대체로 정해짐 : 외부에서 직접접근 불가 => getXxx, setXxx 으로 접근한다
@@ -8,7 +8,7 @@
 Python의 LEGB : 로컬, 엔클로징, 글로벌, 빌트 인
 private = 로컬
 public = 글로벌
-## Inheritance 상속
+# Inheritance 상속
 객체 정의 시 기존에 존재하는 객체의 속성과 기능을 상속받아 정의하는 것
 - ### Generalization
 	- 추출된 class의 공통적인 특성의 모아 super class로 정의할 수 있다,
@@ -77,7 +77,7 @@ java.lang,Object
 	- hash가 ==다르면 다른것,== hash가 같으면 같을수도 =="있는 것"==
 	- ** equals 메서드를 override할 때는 hashCode도 override하도록 권장함
 		미리 작성된 String이나 Number 등에서 재정의된 hashCode 활용 권장
-### Polymorphism 다형성
+# Polymorphism 다형성
 같은 타입 또는 같은 기능의 호출로 다양한 효과를 가져오는 것
 - 하나의 이름으로 여러 개의 형태를 구성할 수 있는 OOP 특징
 - Java의 가장 강력한 특징
@@ -135,5 +135,95 @@ if ( cc instanceof MainCustomer){
 > 	}} ```
 
 
-### Abstraction 추상화
-현실 세계에 존재하는 객체의 주요특징을 추출하는 과정
+# Abstraction 추상화
+현실 세계에 존재하는 객체의 주요 특징을 추출하는 과정
+### ==구현부가 없는 메서드가 왜 필요할까?==
+=> 상속받아 쓰기 위해? ==컴파일러를 통과하기 위해==
+컴파일러가 하는 일 : 있는지 여부를 확인하는 것
+```java
+Parent p = new Child();
+만약 같은 변수나 메서드가 있다? 문제 X (컴파일러가 부모한테 이런 메서드가 있구나 하고 넘어가고
+			 => 런타임 진행하면서 부모->자식 순서로 상속이 이루어지면서 자식의 메서드가 나옴)
+But 자식에만 있다? 문제 발생 ( 컴파일러가 없는데?????? 하면서 에러발생 하면서 런타임까지 안감)
+```
+
+```java
+class Parent(){
+	void mParent(){
+		System.out.println("parent emethod);
+	}
+}
+class Child() extends Parent{
+	void mChild(){
+		System.out.println("child emethod);
+	}
+}
+...
+Parent pp = new Parent() // 이건 됨
+Parent p  = new Child();
+p.mchild(); // 이건 안됨						
+```
+<->
+```java
+abstract class Parent(){
+	void mParent(){
+		System.out.println("parentt emethod);
+	}
+	abstract void mChild();
+}
+
+...
+
+Parent p = new Parent(); // 컴파일러 단계에서 안됨
+p.mChild() // 이건 됨						   
+```
+### abstract 
+- 일부 구현되지 않은 메서드를 포함할 수 있는 클래스
+- 객체 지향이란? 존재하지 않은 것을 가져다가 쓰는 것 
+- 예를 들어 "운송 수단"이라는 개념을 abstract로 만들어 놓고
+	비행기, 승용차, 트럭 등등이 이 운송수단이라는 것을 상속받아 쓰는 것
+	운송수단 [] : 
+	[0] = new Truck()
+	[1] = new 비행기()
+	...
+> [!NOTE] 객체를 생성하지 못함
+> - 완전히 구현되지 않았기 때문
+>- 상속을 주어서 상속 받은 클래스가 abstract 메소드를 구현해야 사용 가능
+>	- Overriding
+>- Sub 클래스 객체 생성 시 super type으로 사용 가능
+>- ==ClassName() 이 안됨, 근데 ClassName [] class_name = new ClassName[5]; 는 가능==
+>- => 오브젝트(객체)생성이 안될 뿐 데이터 타입으로는 쓸 수 있다.
+# Interface
+- 상수(final)와 구현되지 않은(abstract) 메소드로만 구성
+- 특별히 정의하지 않아도 컴파일 시에 아래 제한자가 추가된다.
+	- public static final 제한자가 상수 앞에 붙는다
+	- public abstract 제한자가 메소드 앞에 붙는다.
+		--> Overriding 시 항상 public 제한자를 가져야 한다. 
+```java
+interface Trans{
+	abstract void start(); // 동일 : public abstract void start();
+	void stop(); // 동일: public abstract void stop();
+}
+```
+### default method
+-  java 8 버전부터 body를 갖는 method를 추가할 수 있음
+ ```java
+interface Trans{
+	...
+	default public void doTrans(){
+		System.out.println("default method")
+	}
+}
+```
+자바는 단일상속만 가능하다
+=> 한계를 극복하기 위해 인터페이스 만들어짐
+=> 인터페이스는 ==다중구현(상속)==이 가능하다.
+> [!NOTE]  interface
+> - 인터페이스는 객체 생성 할 수 없다
+> 	- 구현되지 않은 메서드를 포함하기 때문
+> - super type으로 사용
+> 	- 상속되어져서 sub class가 구현되지 않은 모든 메소드 구현 -Overriding
+> 	- 상속한  sub class들의 명세서 역할로 사용
+> 	- Polymorphism 효과
+> - interface는 다른 interface를 다중상속 할 수 있다.
+
