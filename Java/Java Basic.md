@@ -94,11 +94,11 @@ java.lang,Object
 	  System.out.println(cc); 를 호출하면, MainCustomer의 toString()이 호출된다.
 		- MainCustomer()가 구현하고 있는 toString()이 불린다.
 ```
-		- class PolyTest{
-			pulic static void main(String[] args){
+		class PolyTest{
+			public static void main(String[] args){
 			System.out.println(c);
 
-			MainCustomer mc = new MainCustomer("소나무", "부산", 21, "여행);
+			MainCustomer mc = new MainCustomer("소나무", "부산", 21, "여행");
 			System.out.println(mc);
 
 			Customer cc  = new MainCustomer("강나루", "인천", 25, "게임);
@@ -122,9 +122,6 @@ if ( cc instanceof MainCustomer){
 	...//객체 처리
 }
 ```
-
-
-
 > [!NOTE]  instanceof
 >  - 전달되어온 변수의 객체 타입이 무엇인지를 정확하게 확인하여 작업하고자 할 때에는 instanceof 연산자를 이용한다.
 > - 어떤 객체의 인스턴스 인지를 확인 후 casting 하여야 견고한 프로그램을 작성할 수 있다.
