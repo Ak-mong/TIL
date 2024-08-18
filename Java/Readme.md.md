@@ -312,3 +312,25 @@ public static void main(String[] args){
 innerStaticMethod()............
 innerMethod()..........
 ```
+# Collection
+- Java는 객체지향 언어이다.
+- 수많은 객체를 생성하고, 이동해야 할 경우 객체를 임시저장 할 객체가 필요
+- java.util : package에 객체들을 저장하고 관리할 interface와 class 정의
+- Collection : 모든 클래스들의 객체를 요소(element)로 저장하는 객체들의 최상위 interface
+> 가장 초기에 ArrayList만 있었다. 
+> --> 이 ArrayList에는 다양한 걸 넣게 될꺼니까 넣을 때마다 타입캐스팅를 진행해야겠다 
+> --> 근데 실제 개발로 들어가니까, 결국 넣던 타입만 넣게 된다.
+> --> 계속 똑같은 것을 넣는 데 항상 타입캐스팅을 해야되네?
+> --> Generic 등장
+## Generic
+- Collection은 다양한 형태의 Object를 담으려는 목적으로 만들어졌으나, 대부분이 동일한(특정한) Object들을 담는 용도로 사용됨
+- 담을 클래스를 특정하기 위해서 추가됨
+- Java 1.5 부터는 Generic ( <> )을 도입해서, Class Code 작성 시점에 임의의 (가령 <T>) 타이을 사용하도록 하고, 그 Class 를 사용하는 Code 에서 <T> 대신 실제 사용하는 Type (가령 <String> )을 사용할 수 있도록 하였음
+	- public class 클래스명<T> {...}
+	- public interface 인터페이스명<T>{...}
+	- T : reference ==T==ype, E : ==E==lement, K: ==K==ey, V: ==V==alue
+	- 선언부의 data type과 생성부의 data type은 반드시 같아야 함
+		- 클래스명<String> 변수 = new 클래스명<String>();
+		- 클래스명<String> 변수 = new 클래스명<>();
+		- 
+
