@@ -1,3 +1,4 @@
+# Java Basic
 # OOP
  - Encapsulation(은닉화), Inheritance(상속), Polymorphism(다형성)
 # Encapsulation 은닉화
@@ -227,3 +228,87 @@ interface Trans{
 > 	- Polymorphism 효과
 > - interface는 다른 interface를 다중상속 할 수 있다.
 
+# Nested class
+클래스 안에 클래스
+- class 안에 다시 정의 되는 class를 말함
+- 바깥 class의 일부처럼 사용되고, 바깥 class의 member에 접근할 수 있다.
+```java
+class Outer {
+	public boid outerMetthod(){
+		System.out.println("outerMethod()..........");
+		Inneer invar = new Inner();
+		invar.innerMethod();
+	}
+	class Inner {
+		void innerMethod(){
+			System.out.println("innerMethod().....")
+		}
+	}
+	public static void main(String[] args){
+		Outter ou = new Outer();
+		ou.outerMethod();
+	}
+}
+```
+### anoymous inner class
+- 이름없이 만들어지는 class
+- Android에서 Event 처리에 자주 활용되는 방식
+```java
+public class AnonymousInner{
+	public Folder gotNewFolder(){
+		return new Folder(){
+			public void open() {}
+			public void fold(){}
+		};
+	}
+}
+interface Folder{
+	public void open();
+	public void fold();
+}
+```
+
+```java
+public class AnonymousInner{
+	public Folder gotNewFolder(){
+		class TempClass implements Folder{
+			public void open() {}
+			public void fold(){}
+		}
+		return new TempClass();
+	}
+}
+interface Folder{
+	public void open();
+	public void fold();
+}
+```
+### static inner class
+- class안에 다시 정의되는 class를 말함
+- 별도의 객체 없이 사용할 수 있음
+```java
+public class StaticInner{
+	public void outerMethod(){
+		System.out.println("outerMethod()....");
+	}
+
+	public static class Inner {
+		public static void innerStaticMethod(){
+			System.out.println("innerStaticMethod().....");
+		}	
+		void innerMethod(){
+			System.out.println("innerMethod().....");
+		}
+	}
+}
+
+public static void main(String[] args){
+	StaticInner.Inner innerStaticMethod(); // static method call
+	StaticInner.Inner in = new StaticInner.Inner();
+	in.innerMethod();
+}
+
+// 출력 값
+innerStaticMethod()............
+innerMethod()..........
+```
