@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "12149b98eb639b94",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +167,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8b3285b01f99feb1",
+  "active": "12149b98eb639b94",
   "lastOpenFiles": [
     "untitled/out/production/untitled/Main.class",
     "untitled/out/production/untitled/Cat.class",
