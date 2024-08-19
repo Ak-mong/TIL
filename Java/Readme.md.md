@@ -3,7 +3,7 @@
  - Encapsulation(은닉화), Inheritance(상속), Polymorphism(다형성)
 # Encapsulation 은닉화
 하나의 클래스 안에 데이터와 기능을 담아 정의하고, 중요한 데이터나 복잡한 기능 등은 숨기고, 외부에서 사용에 필요한 기능만을 공개하는 것
-+하면 public : 외부에서 바로 접근이 되버림
++하면 public : 외부에서 바로 접근이 되버림 
 -하면 private 라고 대체로 정해짐 : 외부에서 직접접근 불가 => getXxx, setXxx 으로 접근한다
 ### Pirvate 와 Public 차이 : Scope와 관련해서 명시해주기
 Python의 LEGB : 로컬, 엔클로징, 글로벌, 빌트 인
@@ -332,5 +332,27 @@ innerMethod()..........
 	- 선언부의 data type과 생성부의 data type은 반드시 같아야 함
 		- 클래스명<String> 변수 = new 클래스명<String>();
 		- 클래스명<String> 변수 = new 클래스명<>();
-		- 
 
+# Design Patten
+정답은 아니지만, 하나의 가이드라인이 될 수 있음
+### 싱글톤? 
+현실에 하나만 존재하는걸 메모리 상에도 하나만 존재하게 강제화 하는 것(new 를 한번만 하게 하는 것) / new 할때마다 계속 새로 생길 수는 없으니...
+어떻게? 
+1. 생성자를 private로 만든다. (싱글톤의 첫 번째 조건)
+```java
+// singleton 의 첫번 째 !
+private static EmployeeMgr instance;
+
+public static EmployMgr getInstance(){
+	if(instance ==null){
+		instance = new EmployeeMgr();}
+	}
+	return instance
+} 
+// 가져다 쓸 때
+EmplyeeMgr mgr = EmployeeMgr.getInstance();
+EmplyeeMgr mgr1 = EmployeeMgr.getInstance();
+EmplyeeMgr mgr2 = EmployeeMgr.getInstance();
+// 세 개의 객체가 바라보는 인스턴스는 동일 하다.
+````
+# Java IO
