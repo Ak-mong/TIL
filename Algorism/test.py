@@ -1,43 +1,41 @@
+import time
+start_time = time.time()
+import math
 import sys
 sys.stdin =open('input.txt')
 input = sys.stdin.readline
 from collections import deque
 #sys.setrecursionlimit(10**6)
-import time
-start_time = time.time()
-# 1463 1로 만들기 실버 3
 
+# 14889 스타트와 링크 실버1
 n = int(input())
-# dp = [[0] for _ in range(n)]
-dp = [0] * (n+1)
-for i in range(2,n+1):
-    dp[i] = dp[i-1] + 1
-    if i%2 ==0:
-        dp[i] = min(dp[i], dp[i//2] + 1)
-    if i%3 == 0:
-        dp[i] = min(dp[i], dp[i//3] + 1)
-print(dp[n])
-# min_cnt = 1e6
-# deq = deque()
-# deq.append((n,0))
-# cnt2 =0
-# while deq:
-#     cnt2 += 1
-#     value,cnt = deq.popleft()
-#     if value == 1:
-#         min_cnt = min(min_cnt, cnt)
-#         break
-#     for i in [3,2,1]:
-#         if i == 3 and value%3 == 0:
-#             deq.append((value//3,cnt + 1))
-#         elif i == 2 and value%2 == 0:
-#             deq.append((value // 2, cnt + 1))
-#         elif i == 1: deq.append((value-1, cnt + 1))
-# print(min_cnt)
-# print(cnt2)
-# print(start_time-time.time())
+maps = [list(map(int,input().split())) for _ in range(n)]
+# print(maps)
+visited = [False] * (n+1)
+sum_v = 1e10
+def findindex(goal,level):
+    global sum_v
+    if goal == n//2:
+        start = 0
+        link = 0
+        for i in range(n):
+            for j in range(n):
+                if visited[i] and visited[j]:
+                    start += maps[i][j]
+                elif not visited[i] and not visited[j]:
+                    link += maps[i][j]
+        sum_v = min(sum_v,abs(start-link))
+        return
+    for i in range(level,n):
+        if visited[i]: continue
+        visited[i] = True
+        findindex(goal+1,i+1)
+        visited[i] = False
+findindex(0,0)
+print(sum_v)
 
 # 5639 이진 검색 트리 골드 5
+print(start_time-time.time())
 '''
 완전 이진트리가 아닌데 이진검색을 함
 
